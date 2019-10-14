@@ -1,7 +1,7 @@
 clear;
 
 format shortG;
-cd /home/vkirillov/CLionProjects/DiplomaMSU/resource/data/
+cd /home/kirillov/CLionProjects/DiplomaMSU/resource/data/
 
 norm_vectors = load('normal_vectors.dat');
 tau1_vectors = load('tau1_vectors.dat');
@@ -30,17 +30,17 @@ for i=1:length(points)
   end
  
  if i == 650
-     plot3(n(:,1),n(:,2),n(:,3), 'b')
-         plot3(t1(2,1),t1(2,2),t1(2,3), 'og')
+    plot3(n(:,1),n(:,2),n(:,3), 'b')
+    plot3(t1(2,1),t1(2,2),t1(2,3), 'og')
     plot3(t1(:,1),t1(:,2),t1(:,3), 'b')
     plot3(t2(:,1),t2(:,2),t2(:,3), 'b')
-    end
-    #{
+ end
+    %{
     plot3(t1(2,1),t1(2,2),t1(2,3), 'og')
     plot3(t1(:,1),t1(:,2),t1(:,3), 'b')
     plot3(t2(:,1),t2(:,2),t2(:,3), 'b')
     plot3(n(:,1),n(:,2),n(:,3), 'b')
-    #}
+    %}
 
 
 end
@@ -48,4 +48,4 @@ end
 grid on;
 hold off;
 
-#}
+%}
